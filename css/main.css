@@ -15,10 +15,46 @@ body { font-family: Helvetica, Arial, sans-serif; font-size: 16px; }
 	margin: 10px;
 }
 
+#mainHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .logo {
-	width: 100px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 50%;
+	display: inline-block;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	order: -1;
+}
+
+.nav {
+	flex: 0 0 60px;
+}
+
+#burgerCon {
+	margin-bottom: 20px;
+	position: fixed;
+	top: 85px;
+	width: 100%;
+	background-color: #fff;
+
+	display:none;
+}
+
+.show-mobile-nav { display: block !important; }
+
+#burgerCon li { 
+	padding: 20px; 
+	border-top: thin solid 1px #666 black; 
+	text-align: center; 
+	top: 60px; 
+}
+
+#burgerCon a {
+	text-decoration: none;
+	color: #8ea;
 }
 
 @media screen and (min-width: 600px) {
